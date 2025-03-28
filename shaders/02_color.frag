@@ -1,3 +1,6 @@
+#version 300 es
+precision mediump float;
+
 /**
 * \file
 * \author Gyuwon Na
@@ -6,9 +9,6 @@
 * \copyright DigiPen Institute of Technology
 */
 
-#ifdef GL_ES
-precision mediump float;
-#endif
 
 #define PI 3.14159265359
 
