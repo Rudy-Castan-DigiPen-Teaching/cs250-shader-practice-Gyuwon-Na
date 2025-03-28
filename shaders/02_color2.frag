@@ -1,6 +1,8 @@
 #version 300 es
 precision mediump float;
 
+#define TWO_PI 6.28318530718
+
 /**
 * \file
 * \author Gyuwon Na
@@ -9,7 +11,7 @@ precision mediump float;
 * \copyright DigiPen Institute of Technology
 */
 
-#define TWO_PI 6.28318530718
+out vec4 FragColor;
 
 uniform vec2 u_resolution;
 uniform float u_time;
@@ -38,5 +40,5 @@ float radius=length(toCenter-.25);
 // and the Saturation to the radius
 color=hsb2rgb(vec3((angle*.75),radius,1.));
 
-gl_FragColor=vec4(color,1.);
+FragColor=vec4(color,1.);
 }

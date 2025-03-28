@@ -1,6 +1,8 @@
 #version 300 es
 precision mediump float;
 
+#define PI 3.14159265359
+
 /**
 * \file
 * \author Gyuwon Na
@@ -9,8 +11,7 @@ precision mediump float;
 * \copyright DigiPen Institute of Technology
 */
 
-
-#define PI 3.14159265359
+out vec4 FragColor;
 
 uniform vec2 u_resolution;
 uniform vec2 u_mouse;
@@ -37,5 +38,5 @@ void main() {
     color = mix(color,vec3(1.0, 0.9529, 0.2706),plot(st,pct.g));
     color = mix(color,vec3(1.0, 0.9373, 0.8039),plot(st,pct.b));
 
-    gl_FragColor = vec4(color,1.0);
+    FragColor = vec4(color,1.0);
 }
