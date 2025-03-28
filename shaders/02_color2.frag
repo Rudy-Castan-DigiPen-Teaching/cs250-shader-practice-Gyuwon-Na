@@ -6,7 +6,9 @@
 * \copyright DigiPen Institute of Technology
 */
 
+#ifdef GL_ES
 precision mediump float;
+#endif
 
 #define TWO_PI 6.28318530718
 
