@@ -8,3 +8,5 @@
 [Gradient](draw.html?shader=02_color.frag)
 
 [HSV Example](draw.html?shader=02_color2.frag)
+
+[Shape](draw.html?shader=04_circle.frag)
